@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4231903150571503"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-4231903150571503">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9QT68Y0BD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y9QT68Y0BD');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informasi Seputar Amati Coffee Menu Makanan dan Minumam Terbaik Se kota Batam">
+    <meta name="keywords" content="Amati Coffee, Recipe Menu, Cefe Di Batam, Tempat Nongkrong di Batam">
+    <meta name="author" content="Amati Coffee">
+    <title>
+
+
+     [Recipes Menu]</title>
+    <link rel="icon" href="https://logo.clearbit.com/anchorcafeandroastery.com" type="image/x-icon">
+    <style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #008a8a;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 2rem;
+    color: #008a8a;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 30px; /* Increased margin to add space between logo and menu */
+    animation: logoColorChange 4s infinite; /* Animation to change logo color */
+}
+
+@keyframes logoColorChange {
+    0% {
+        color: #008a8a;
+    }
+    25% {
+        color: #d9e7e7;
+    }
+    50% {
+        color: #008a8a;
+    }
+    75% {
+        color: #d9e7e7;
+    }
+    100% {
+        color: #008a8a;
+    }
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center menu items */
+    margin-top: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+header ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first item */
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #008a8a;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://dzglkev4c34xb.cloudfront.net/horego.com/sekupang/coffee-shop/amati-coffee-tea-resto-tiban/ambience/af1qipmw37lj3l4nah1ua5sddzxj1vws2cs08fxq_h5p.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #008a8a;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent dark overlay */
+}
+
+.hero-content {
+    z-index: 1;
+    padding: 20px;
+    color: #d9e7e7;
+    max-width: 80%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.cta-btn {
+    background-color: #008a8a;
+    color: #d9e7e7;
+    padding: 20px 35px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #D4600D;
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto; /* Menambahkan scroll pada modal jika konten lebih panjang */
+}
+
+/* Konten Modal */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 600px;
+    max-height: 80vh; /* Menentukan batas tinggi modal */
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+    border-radius: 10px;
+}
+
+/* Tombol Close */
+.close {
+    color: #FF6200;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+footer ul li a:hover {
+    color: #FF6200;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+
+    header .logo a {
+        font-size: 1.7rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    header .logo a {
+        font-size: 1.5rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    header .logo a {
+        font-size: 1.3rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Job Listings Section (Grid 3 Kolom Horizontal) */
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom dalam satu baris */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.job-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Pastikan gambar dalam setiap job item memiliki lebar yang tepat */
+.job-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.job-item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.job-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.job-item .apply-btn {
+    background-color: #FF740F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.job-item .apply-btn:hover {
+    background-color: #D4600D;
+    transform: scale(1.05);
+}
+
+/* Modal for Apply Now */
+#applyModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.modal-content #modalTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal-content #modalDescription {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Close Button */
+.close {
+    color: #FF6200;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .job-listings {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-listings {
+        grid-template-columns: 1fr; /* 1 kolom pada layar lebih kecil */
+    }
+}
+
+/* FAQ CSS */
+  .faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .faq-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #FF6200;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .faq-item a {
+    color: #FF6200;
+    text-decoration: none;
+  }
+
+  .faq-item a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+        <div class="logo">
+            <a href="https://dzglkev4c34xb.cloudfront.net/horego.com/sekupang/coffee-shop/amati-coffee-tea-resto-tiban/ambience/af1qipmw37lj3l4nah1ua5sddzxj1vws2cs08fxq_h5p.jpg" target="_blank" style="font-size: 1.8rem; color: white; text-decoration: none; font-weight: bold;">Amati Coffe</a>
+        </div>
+            <ul>
+                <li><a href="#" id="aboutBtn">About Us</a></li>
+                <li><a href="#" id="servicesBtn">Our Menu</a></li>
+                <li><a href="#" id="contactBtn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Amati Coffe</h1>
+            <p>Rasa yang Menginspirasi, Aroma yang Menyatukan</p>
+            <a href="#" id="applyBtn" class="cta-btn"><strong>SPECIAL MENU</strong></a>
+        </div>
+    </section>
+
+<!-- Job Listings Section (Grid 3 Kolom) -->
+<section class="job-listings">
+    <div class="job-item">
+        <img src="https://nomadette.com/wp-content/uploads/2024/09/Salmon-Sambal-Matah-800x530.jpg" alt="Salmon Sambal Matah">
+        <h3>Salmon Sambal Matah</h3>
+        <p><strong>Salmon Sambal Matah</strong> Perpaduan Gurih dan Segar, Cita Rasa Nusantara dengan Sentuhan Elegan!</p>
+        <br />
+        <a href="#" id="applyBtn1" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://assets-pergikuliner.com/uc5VzwdCjA6_kO04RIcBJwBDzAU=/fit-in/1366x768/smart/filters:no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/674419/picture-1505456691.JPG" alt="Chicken Truffle">
+        <h3>Chicken Truffle</h3>
+        <p>Perpaduan Sempurna Ayam Gurih dan Aroma Truffle yang Mewah, Menghadirkan Sensasi Lezat di Setiap Gigitan untuk Pengalaman Kuliner yang Berkelas.</p>
+        <a href="#" id="applyBtn2" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/sirloinsteakwithchun_90288_16x9.jpg" alt="Sirloin Steak">
+        <h3>Sirloin Steak</h3>
+        <p>Kelezatan Daging Premium yang Juicy dengan Bumbu Istimewa, Menghadirkan Cita Rasa Sempurna di Setiap Potongan.</p>
+        <a href="#" id="applyBtn3" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://d1r9hss9q19p18.cloudfront.net/uploads/2023/05/14083819-3FBF-4978-B9C8-94F903CEB375.jpeg" alt="Black Forrest Coffee">
+        <h3>Black Forrest Coffee</h3>
+        <p>Perpaduan Kaya antara Aroma Kopi yang Pekat, Cokelat Lembut, dan Sentuhan Manis Ceri, Memberikan Kenikmatan Berkelas di Setiap Tegukan.</p>
+        <a href="#" id="applyBtn4" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://img.freepik.com/free-photo/cold-brew-hibiscus-tea-with-ice-basil-leaves_114579-29762.jpg" alt="Cosmopolitan Tea">
+        <h3>Cosmopolitan Tea</h3>
+        <p>Racikan Elegan dengan Harmoni Rasa Buah yang Menyegarkan dan Aroma Teh yang Halus, Memberikan Kelezatan Modern di Setiap Seduhan.</p>
+        <a href="#" id="applyBtn5" class="cta-btn">DETAILS</a>
+    </div>
+    <div class="job-item">
+        <img src="https://cdn.mathieuteisseire.com/media/khenzdvt/recipe-045-lychee-nojito.jpg" alt="Lychee Mojito">
+        <h3>Lychee Mojito</h3>
+        <p>Perpaduan Segar antara Manisnya Leci, Kesegaran Mint, dan Sentuhan Jeruk Nipis yang Menyegarkan, Menghadirkan Sensasi Tropis di Setiap Tegukan.</p>
+        <a href="#" id="applyBtn6" class="cta-btn">DETAILS</a>
+    </div>
+    <!-- Add more job items as needed -->
+</section>
+
+
+<section>
+  <h2>Orang lain juga bertanya</h2>
+
+  <div itemscope itemtype="https://schema.org/FAQPage">
+    <div class="faq-container">
+      
+      <!-- FAQ Item 1 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apa itu Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Amati Coffee adalah kedai kopi yang menyajikan berbagai jenis kopi berkualitas tinggi dan aneka makanan ringan dengan suasana nyaman untuk bersantai atau bekerja.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 2 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Di mana lokasi Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Amati Coffee memiliki beberapa cabang di berbagai kota besar. Anda dapat menemukan lokasi terdekat melalui situs resmi atau media sosial kami.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 3 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apa jam operasional Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Jam operasional Amati Coffee umumnya mulai pukul 08.00 hingga 22.00, namun dapat bervariasi di setiap cabang.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 4 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menyediakan layanan takeaway?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan layanan takeaway untuk semua menu yang tersedia.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 5 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menyediakan layanan pesan antar?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami bekerja sama dengan beberapa platform layanan pesan antar untuk memudahkan pelanggan menikmati produk kami di rumah.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 6 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apa menu andalan di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Menu andalan kami meliputi Amati Signature Coffee, Cappuccino, dan Cold Brew.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 7 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada pilihan minuman non-kopi di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Tentu, kami menyediakan berbagai pilihan seperti teh, cokelat panas, dan mocktail segar.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 8 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menawarkan menu khusus vegetarian atau vegan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki beberapa menu yang ramah vegetarian dan vegan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 9 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee memiliki area bebas rokok?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan area bebas rokok untuk kenyamanan pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 10 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia Wi-Fi gratis di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan akses Wi-Fi gratis bagi seluruh pelanggan.</p>
+  </div>
+</div>
+
+
+      <!-- FAQ Item 11 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menerima reservasi tempat?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menerima reservasi untuk acara tertentu atau kunjungan dalam jumlah besar.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 12 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menjual biji kopi?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menjual berbagai pilihan biji kopi berkualitas tinggi untuk dibawa pulang.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 13 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apa metode pembayaran yang diterima di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Kami menerima pembayaran tunai, kartu debit/kredit, dan dompet digital.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 14 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada program loyalitas di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki program loyalitas dengan reward menarik bagi pelanggan setia.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 15 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee ramah anak?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki fasilitas ramah anak termasuk kursi bayi dan menu khusus anak.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 16 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menyediakan ruang rapat atau coworking space?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Beberapa cabang kami memiliki ruang rapat atau area kerja yang dapat disewa.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 17 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee mendukung acara komunitas?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami mendukung berbagai acara komunitas dengan fasilitas dan layanan khusus.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 18 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada menu musiman di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan menu musiman yang berganti sesuai periode tertentu.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 19 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee ramah hewan peliharaan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Beberapa cabang kami ramah terhadap hewan peliharaan di area outdoor.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 20 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana cara menghubungi Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Anda dapat menghubungi kami melalui email, telepon, atau media sosial resmi kami.</p>
+  </div>
+</div>
+
+      <!-- FAQ Item 21 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menggunakan bahan-bahan lokal?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menggunakan bahan-bahan lokal berkualitas tinggi di beberapa produk kami.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 22 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia pilihan susu nabati di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan susu nabati seperti almond dan oat sebagai alternatif.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 23 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee memiliki merchandise?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menjual merchandise eksklusif seperti mug, tumbler, dan kaos.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 24 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menyediakan kursus atau pelatihan barista?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami mengadakan kursus barista untuk pemula dan profesional secara berkala.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 25 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana cara menjadi mitra atau waralaba Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Anda dapat mengunjungi situs resmi kami untuk informasi kemitraan dan waralaba.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 26 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee memiliki menu rendah gula?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menawarkan pilihan menu dengan kadar gula rendah atau tanpa gula tambahan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 27 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee mendukung praktik ramah lingkungan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami berkomitmen pada praktik ramah lingkungan seperti pengurangan plastik sekali pakai.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 28 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menerima kritik dan saran?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Tentu, kami sangat menghargai umpan balik dari pelanggan untuk meningkatkan layanan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 29 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia menu khusus untuk acara atau pesta?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan paket khusus untuk acara atau pesta sesuai permintaan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 30 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee memiliki layanan katering?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan layanan katering untuk berbagai acara.</p>
+  </div>
+</div>
+
+
+      <!-- FAQ Item 31 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia produk bebas gluten di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki beberapa pilihan menu bebas gluten.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 32 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee memiliki program diskon atau promo?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami secara rutin menawarkan diskon dan promo khusus di berbagai kesempatan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 33 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana cara melamar kerja di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Anda dapat melihat lowongan kerja di situs resmi atau media sosial kami.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 34 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah tersedia minuman tanpa kafein di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menyediakan beberapa pilihan minuman bebas kafein.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 35 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menawarkan paket keanggotaan?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami memiliki paket keanggotaan dengan berbagai keuntungan eksklusif.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 36 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menerima pesanan khusus?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami menerima pesanan khusus sesuai permintaan pelanggan.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 37 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah ada fasilitas parkir di Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, sebagian besar cabang kami memiliki fasilitas parkir yang memadai.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 38 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee menyediakan minuman beralkohol?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Tidak, kami tidak menyediakan minuman beralkohol.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 39 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Apakah Amati Coffee memiliki kolaborasi dengan brand lain?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Ya, kami secara berkala melakukan kolaborasi dengan brand lokal dan internasional.</p>
+  </div>
+</div>
+
+<!-- FAQ Item 40 -->
+<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">Bagaimana cara memberikan ulasan tentang Amati Coffee?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Anda dapat memberikan ulasan melalui Google Review, media sosial, atau langsung di tempat.</p>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#" id="aboutFooterBtn">About Us</a></li>
+            <li><a href="#" id="privacyFooterBtn">Privacy Policy</a></li>
+            <li><a href="#" id="termsFooterBtn">Terms & Conditions</a></li>
+        </ul>
+        <p>&copy; 2025 Amati Coffee</p>
+</footer>
+
+<!-- Modal for About Us -->
+<div id="modal-about" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>About Us</h2>
+<p>
+
+<h2>**About Us - Amati Coffee**</h2>
+<br />
+<p><strong>About Us - Amati Coffee</strong></p>
+<br />
+<p><strong>Tentang Amati Coffee</strong></p>
+
+<p>Amati Coffee hadir dengan komitmen untuk menyajikan kopi berkualitas tinggi yang mengangkat keunikan cita rasa dari berbagai daerah. Kami percaya bahwa secangkir kopi bukan sekadar minuman, melainkan pengalaman yang membangkitkan semangat dan mempererat kebersamaan. <br><br> Dengan bahan baku terbaik dari petani lokal dan internasional, kami mengolah setiap biji kopi dengan hati-hati untuk memastikan rasa yang autentik dan memuaskan di setiap sajian.</p>
+
+<p><strong>Visi Kami</strong><br> Menjadi destinasi utama bagi para penikmat kopi yang mencari kualitas unggul, inovasi, dan suasana yang bersahabat.</p>
+
+<p><strong>Misi Kami</strong><br> - Menyajikan kopi terbaik yang diolah secara profesional dan penuh dedikasi. <br> - Mendukung petani kopi melalui kemitraan yang adil dan berkelanjutan. <br> - Menciptakan ruang yang hangat dan ramah untuk berbagi momen berharga.</p>
+
+<p><strong>Mengapa Memilih Amati Coffee?</strong><br> Kami tidak hanya menghadirkan kopi berkualitas, tetapi juga pengalaman tak terlupakan. Dengan atmosfer yang nyaman, pelayanan ramah, dan cita rasa kopi yang khas, setiap kunjungan Anda menjadi bagian dari perjalanan kami dalam merayakan kopi.</p>
+</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Modal for Our Services -->
+<div id="modal-services" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>Our Services</h2>
+<p>
+
+<h2>**Our Services - Amati Coffee**</h2>
+<br />
+<p>Di <strong>Amati Coffee</strong>, kami menghadirkan pengalaman menikmati kopi berkualitas tinggi dengan cita rasa khas dan suasana yang nyaman. Dari racikan kopi spesial hingga layanan eksklusif, kami siap memenuhi kebutuhan Anda.</p>
+<br />
+
+<h3>☕ Specialty Coffee & Signature Drinks</h3>
+<p>Nikmati berbagai varian kopi pilihan yang diseduh dari biji kopi terbaik. Dari espresso klasik hingga minuman khas kami, setiap tegukan menghadirkan kenikmatan yang autentik.</p>
+<br />
+
+<h3>🍰 Artisanal Snacks & Desserts</h3>
+<p>Kami menyajikan aneka camilan dan dessert buatan tangan dengan bahan berkualitas tinggi. Pilihan sempurna untuk menemani momen santai bersama kopi favorit Anda.</p>
+<br />
+
+<h3>🎉 Private Gatherings & Corporate Events</h3>
+<p>Amati Coffee menyediakan ruang nyaman dan eksklusif untuk berbagai acara spesial, mulai dari pertemuan bisnis, perayaan pribadi, hingga acara komunitas. Kami siap memberikan pengalaman yang berkesan.</p>
+<br />
+
+<h3>🚚 Delivery & Takeaway Service</h3>
+<p>Nikmati kelezatan kopi Amati di mana saja dengan layanan antar dan takeaway kami. Kami siap menghadirkan cita rasa istimewa langsung ke tempat Anda.</p>
+<br />
+
+<h3>📖 Cozy Workspace & Study Hub</h3>
+<p>Amati Coffee menawarkan ruang yang nyaman dan tenang untuk bekerja atau belajar. Dengan akses Wi-Fi cepat dan lingkungan yang kondusif, produktivitas Anda akan meningkat.</p>
+<br />
+
+<p>Kami melayani Anda setiap hari dari <strong>09.00 hingga 23.00</strong>. Untuk informasi lebih lanjut atau reservasi, hubungi kami di 085171030851 atau ikuti kami di <strong><a href="https://instagram.com/amaticoffee">Instagram: @amaticoffee</a></strong>.</p>
+<br />
+
+<p><strong>Amati Coffee - Savor Every Moment.</strong></p>
+</p>
+    </div>
+</div>
+
+
+<!-- Modal for Contact -->
+    <div id="modal-contact" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>Contact Us</h2>
+<p><strong>Amati Coffee | Tea | Resto Tiban</strong><br>
+Tiban City Square, A4 no.1, Jl. Tiban Raya No.3, Tiban Baru, Kota Batam, Kepulauan Riau 29424<br><br>
+
+<strong>Jam Operasional:</strong><br>
+Senin: 09.00–23.00<br>
+Selasa: 09.00–23.00<br>
+Rabu: 09.00–23.00<br>
+Kamis: 09.00–23.00<br>
+Jumat: 13.00–23.00<br>
+Sabtu: 09.00–23.00<br>
+Minggu: 09.00–23.00<br><br>
+
+<strong>Kontak:</strong><br>
+Telepon: 085171030851<br>
+Instagram: <a href="https://www.instagram.com/p/CR5qYCuMNKn/?utm_medium=copy_link" target="_blank">@amatiresto</a>
+</p>
+        </div>
+    </div>
+
+
+
+
+<!-- Modal for Footer About Us -->
+    <div id="modal-footer-about" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+<h2>About Us</h2>
+<p><strong>Amati Coffee</strong> adalah kedai kopi yang berdedikasi menghadirkan pengalaman kopi berkualitas tinggi dengan cita rasa autentik. Kami percaya bahwa secangkir kopi yang diseduh dengan hati mampu menghadirkan kebahagiaan di setiap tegukan. <br><br>
+
+Sejak berdiri, Amati Coffee telah berkomitmen menggunakan biji kopi pilihan dari petani lokal terbaik. Dengan proses penyajian yang teliti, kami menghadirkan berbagai varian kopi, mulai dari espresso klasik hingga kreasi kopi modern yang inovatif. <br><br>
+
+<strong>Visi kami</strong> adalah menjadi destinasi utama bagi para pecinta kopi yang mencari rasa dan kualitas tanpa kompromi. <br>
+<strong>Misi kami</strong> adalah mendukung petani kopi lokal, menyajikan kopi berkualitas tinggi, dan menciptakan ruang nyaman untuk bersantai dan berbagi cerita. <br><br>
+
+Di Amati Coffee, kami percaya bahwa setiap cangkir memiliki cerita, dan kami ingin menjadi bagian dari cerita Anda. Nikmati setiap momen dengan kopi terbaik di Amati Coffee.</p>
+    </div>
+</div>
+
+<!-- Modal for Privacy Policy -->
+<div id="modal-footer-privacy" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>Privacy Policy</h2>
+<p><strong>Kebijakan Privasi - Amati Coffee</strong></p>
+
+<p>Terakhir diperbarui: Maret 2025</p><br>
+
+<p>Di <strong>Amati Coffee</strong>, kami menghormati privasi pelanggan kami dan berkomitmen untuk melindungi informasi pribadi Anda. Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data Anda saat mengakses layanan kami.</p><br>
+
+<p><strong>1. Informasi yang Kami Kumpulkan</strong></p>
+<p>Kami dapat mengumpulkan informasi pribadi berikut:</p>
+<p>- Nama lengkap<br>
+- Alamat email<br>
+- Nomor telepon<br>
+- Informasi pembayaran (jika berlaku)<br>
+- Preferensi pesanan</p><br>
+
+<p><strong>2. Cara Kami Menggunakan Informasi Anda</strong></p>
+<p>Informasi yang kami kumpulkan digunakan untuk:</p>
+<p>- Memproses pesanan dan pembayaran<br>
+- Memberikan informasi terbaru tentang promosi dan penawaran khusus<br>
+- Menanggapi pertanyaan atau permintaan Anda<br>
+- Meningkatkan layanan dan pengalaman pelanggan</p><br>
+
+<p><strong>3. Perlindungan Data Anda</strong></p>
+<p>Kami menerapkan langkah-langkah keamanan yang sesuai untuk melindungi informasi pribadi Anda dari akses yang tidak sah, perubahan, pengungkapan, atau penghancuran data.</p><br>
+
+<p><strong>4. Berbagi Informasi dengan Pihak Ketiga</strong></p>
+<p>Kami tidak menjual, menyewakan, atau membagikan informasi pribadi Anda kepada pihak ketiga kecuali jika diperlukan untuk:</p>
+<p>- Memproses pembayaran melalui mitra terpercaya<br>
+- Mematuhi hukum dan peraturan yang berlaku<br>
+- Melindungi hak dan keamanan kami atau pelanggan kami</p><br>
+
+<p><strong>5. Hak Anda</strong></p>
+<p>Anda memiliki hak untuk:</p>
+<p>- Mengakses, memperbarui, atau menghapus informasi pribadi Anda<br>
+- Menolak menerima komunikasi pemasaran<br>
+- Mengajukan pertanyaan atau keluhan terkait privasi</p><br>
+
+<p><strong>6. Perubahan pada Kebijakan Privasi</strong></p>
+<p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diberlakukan segera setelah diperbarui di situs kami.</p><br>
+
+<p><strong>7. Hubungi Kami</strong></p>
+<p>Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi ini, silakan hubungi kami di:</p>
+<p><strong>Email:</strong> support@amaticoffee.com<br>
+<strong>Telepon:</strong> 085171030851</p><br>
+
+<p>Terima kasih telah mempercayai <strong>Amati Coffee</strong>.</p>
+    </div>
+</div>
+
+<!-- Modal for Terms and Conditions -->
+<div id="modal-footer-terms" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+<h2>Terms and Conditions</h2>
+<p><strong>Syarat dan Ketentuan - Amati Coffee</strong></p>
+
+<p>Selamat datang di Amati Coffee! Dengan mengakses dan menggunakan layanan kami, Anda setuju untuk mematuhi syarat dan ketentuan berikut ini:</p><br>
+
+<p><strong>1. Umum</strong><br>
+- Syarat dan ketentuan ini mengatur penggunaan semua layanan yang disediakan oleh Amati Coffee.<br>
+- Kami berhak untuk memperbarui atau mengubah syarat dan ketentuan ini kapan saja tanpa pemberitahuan sebelumnya.</p><br>
+
+<p><strong>2. Pemesanan dan Pembayaran</strong><br>
+- Semua pesanan yang dilakukan melalui platform kami bersifat final dan tidak dapat dibatalkan setelah dikonfirmasi.<br>
+- Pembayaran dapat dilakukan menggunakan metode yang tersedia, termasuk kartu kredit, transfer bank, dan dompet digital.<br>
+- Harga produk dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya.</p><br>
+
+<p><strong>3. Pengiriman dan Pengambilan</strong><br>
+- Kami menyediakan layanan pengiriman di area tertentu sesuai dengan ketentuan yang berlaku.<br>
+- Waktu pengiriman dapat bervariasi tergantung lokasi dan kondisi lalu lintas.<br>
+- Pelanggan juga dapat memilih opsi pengambilan langsung di lokasi Amati Coffee.</p><br>
+
+<p><strong>4. Kebijakan Pengembalian dan Penukaran</strong><br>
+- Kami hanya menerima pengembalian atau penukaran jika terdapat kesalahan pada pesanan atau produk yang diterima dalam kondisi rusak.<br>
+- Permintaan pengembalian atau penukaran harus diajukan dalam waktu 24 jam setelah pesanan diterima.</p><br>
+
+<p><strong>5. Hak Cipta dan Merek Dagang</strong><br>
+- Semua konten di situs dan layanan Amati Coffee, termasuk logo, gambar, dan teks, dilindungi oleh hak cipta dan merupakan milik Amati Coffee.<br>
+- Dilarang menggunakan, menyalin, atau mendistribusikan konten kami tanpa izin tertulis.</p><br>
+
+<p><strong>6. Hukum yang Berlaku</strong><br>
+- Syarat dan ketentuan ini diatur dan ditafsirkan sesuai dengan hukum yang berlaku di Indonesia.<br>
+- Segala perselisihan yang timbul akan diselesaikan melalui musyawarah atau jalur hukum yang berlaku.</p><br>
+
+<p>Dengan menggunakan layanan kami, Anda menyetujui semua syarat dan ketentuan yang tercantum di atas. Jika Anda memiliki pertanyaan, silakan hubungi kami melalui informasi kontak yang tersedia di situs resmi Amati Coffee.</p>
+    </div>
+</div>
+
+<!-- Modal Salmon Lodeh -->
+<div id="modal-apply" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Salmon Lodeh</h2>
+        <br>
+        <h3>Manfaat Salmon Lodeh</h3>
+        <ul>
+            <li><span itemprop="description">Kaya Omega-3: Salmon mengandung asam lemak omega-3 yang baik untuk kesehatan jantung.</span></li>
+            <li><span itemprop="description">Rasa Gurih dan Lezat: Perpaduan salmon segar dengan kuah lodeh yang kaya rempah menciptakan cita rasa unik.</span></li>
+            <li><span itemprop="description">Sumber Protein Berkualitas: Menyediakan protein tinggi yang penting untuk pertumbuhan dan perbaikan jaringan tubuh.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>150 gr fillet salmon segar</li>
+            <li>200 ml santan kental</li>
+            <li>100 gr labu siam, potong korek api</li>
+            <li>1 batang serai, memarkan</li>
+            <li>2 lembar daun salam</li>
+            <li>3 siung bawang putih, iris tipis</li>
+            <li>4 butir bawang merah, iris tipis</li>
+            <li>1 sdm minyak goreng untuk menumis</li>
+            <li>Garam dan gula secukupnya</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Salmon Lodeh</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Panaskan minyak, tumis bawang merah, bawang putih, serai, dan daun salam hingga harum.</li>
+            <li>Masukkan labu siam, aduk rata, lalu tuang santan secara perlahan.</li>
+            <li>Masak dengan api kecil hingga labu siam setengah matang.</li>
+            <li>Tambahkan fillet salmon, bumbui dengan garam dan gula sesuai selera.</li>
+            <li>Masak hingga salmon matang sempurna dan kuah meresap.</li>
+            <li>Angkat dan sajikan Salmon Lodeh selagi hangat.</li>
+        </ol>
+        <br />
+        <h3>Tips Tambahan</h3>
+        <ol>
+            <li>Gunakan salmon segar untuk hasil rasa terbaik dan tekstur lembut.</li>
+            <li>Tambahkan cabai jika menyukai cita rasa pedas pada kuah lodeh.</li>
+            <li>Pastikan santan tidak pecah dengan memasak menggunakan api kecil.</li>
+        </ol>
+        <br>
+        <p><strong>Salmon Lodeh</strong> adalah perpaduan unik antara masakan tradisional Indonesia dan protein berkualitas tinggi. Cocok untuk hidangan istimewa yang lezat dan bergizi!</p>
+        <br>
+        <img src="https://assets-pergikuliner.com/uc5VzwdCjA6_kO04RIcBJwBDzAU=/fit-in/1366x768/smart/filters:no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/674419/picture-1505456691.JPG" alt="Salmon Lodeh" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+
+<!-- Modal Salmon Sambal Matah -->
+<div id="modal-apply1" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Salmon Sambal Matah</h2>
+        <br>
+        <h3>Manfaat Salmon Sambal Matah</h3>
+        <ul>
+            <li><span itemprop="description">Kaya Omega-3: Membantu meningkatkan kesehatan jantung dan fungsi otak.</span></li>
+            <li><span itemprop="description">Rasa Segar: Sambal matah memberikan rasa pedas segar yang khas.</span></li>
+            <li><span itemprop="description">Sumber Protein: Menyediakan protein berkualitas tinggi untuk energi dan pemulihan otot.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>150 g fillet salmon</li>
+            <li>5 siung bawang merah, iris tipis</li>
+            <li>3 cabai rawit, iris tipis</li>
+            <li>2 lembar daun jeruk, iris halus</li>
+            <li>1 sdm air jeruk nipis</li>
+            <li>2 sdm minyak kelapa</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Salmon Sambal Matah</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Pan-sear fillet salmon hingga matang dan berkulit renyah.</li>
+            <li>Campurkan bawang merah, cabai rawit, daun jeruk, air jeruk nipis, dan minyak kelapa untuk membuat sambal matah.</li>
+            <li>Tuangkan sambal matah di atas salmon yang sudah matang.</li>
+            <li>Sajikan segera dengan nasi hangat.</li>
+        </ol>
+        <br />
+        <img src="https://nomadette.com/wp-content/uploads/2024/09/Salmon-Sambal-Matah-800x530.jpg" alt="Salmon Sambal Matah" width="500" itemprop="image">
+    </div>
+</div>
+
+<!-- Modal Chicken Truffle -->
+<div id="modal-apply2" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Chicken Truffle</h2>
+        <br>
+        <h3>Manfaat Chicken Truffle</h3>
+        <ul>
+            <li><span itemprop="description">Aroma Mewah: Truffle memberikan aroma dan rasa yang khas dan eksklusif.</span></li>
+            <li><span itemprop="description">Kaya Protein: Ayam adalah sumber protein rendah lemak yang baik untuk tubuh.</span></li>
+            <li><span itemprop="description">Tekstur Lembut: Ayam yang dimasak dengan truffle butter menjadi lebih juicy dan lembut.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>150 g dada ayam fillet</li>
+            <li>1 sdm minyak zaitun</li>
+            <li>1 sdm truffle oil atau truffle butter</li>
+            <li>Garam dan lada hitam secukupnya</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Chicken Truffle</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Bumbui ayam dengan garam dan lada hitam.</li>
+            <li>Panaskan minyak zaitun, masak ayam hingga matang di kedua sisi.</li>
+            <li>Tambahkan truffle butter di atas ayam yang sudah matang.</li>
+            <li>Sajikan panas dengan sayuran kukus sebagai pelengkap.</li>
+        </ol>
+        <br />
+        <img src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/htsovnkx/c6b3be11-0bae-4b0e-ae31-a16a6cb8319d.jpg" alt="Chicken Truffle" width="500" itemprop="image">
+    </div>
+</div>
+
+<!-- Modal Sirloin Steak -->
+<div id="modal-apply3" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Sirloin Steak</h2>
+        <br>
+        <h3>Manfaat Sirloin Steak</h3>
+        <ul>
+            <li><span itemprop="description">Sumber Zat Besi: Meningkatkan produksi sel darah merah dan energi.</span></li>
+            <li><span itemprop="description">Rasa Gurih Alami: Daging sirloin memiliki rasa yang kaya dan tekstur kenyal.</span></li>
+            <li><span itemprop="description">Pilihan Premium: Cocok sebagai hidangan spesial untuk momen istimewa.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>200 g sirloin steak</li>
+            <li>1 sdm mentega</li>
+            <li>Garam laut dan lada hitam secukupnya</li>
+            <li>1 siung bawang putih, geprek</li>
+            <li>1 tangkai rosemary (opsional)</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Sirloin Steak</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Bumbui steak dengan garam dan lada di kedua sisi.</li>
+            <li>Panaskan wajan dengan mentega dan bawang putih.</li>
+            <li>Masak steak sesuai tingkat kematangan yang diinginkan (medium-rare hingga well-done).</li>
+            <li>Diamkan selama 5 menit sebelum diiris agar jus daging tetap terjaga.</li>
+        </ol>
+        <br />
+        <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/sirloinsteakwithchun_90288_16x9.jpg" alt="Sirloin Steak" width="500" itemprop="image">
+    </div>
+</div>
+
+
+<!-- Modal Black Forest Coffee -->
+<div id="modal-apply4" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Black Forest Coffee</h2>
+        <br>
+        <h3>Manfaat Black Forest Coffee</h3>
+        <ul>
+            <li><span itemprop="description">Meningkatkan Fokus: Kandungan kafein membantu meningkatkan konsentrasi dan energi.</span></li>
+            <li><span itemprop="description">Rasa Unik: Kombinasi rasa kopi, cokelat, dan ceri memberikan sensasi manis dan pahit yang seimbang.</span></li>
+            <li><span itemprop="description">Penghangat Tubuh: Cocok dinikmati di cuaca dingin untuk menghangatkan tubuh.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>150 ml kopi hitam</li>
+            <li>2 sdm sirup cokelat</li>
+            <li>1 sdm sirup ceri</li>
+            <li>Whipped cream untuk topping</li>
+            <li>Serutan cokelat untuk hiasan</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Black Forest Coffee</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan kopi hitam yang baru diseduh.</li>
+            <li>Tambahkan sirup cokelat dan sirup ceri, aduk hingga merata.</li>
+            <li>Tuang ke dalam cangkir saji.</li>
+            <li>Hiasi dengan whipped cream dan taburan serutan cokelat.</li>
+            <li>Sajikan hangat dan nikmati.</li>
+        </ol>
+        <br />
+        <img src="https://d1r9hss9q19p18.cloudfront.net/uploads/2023/05/14083819-3FBF-4978-B9C8-94F903CEB375.jpeg" alt="Black Forest Coffee" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+<!-- Modal Cosmopolitan Tea -->
+<div id="modal-apply5" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Cosmopolitan Tea</h2>
+        <br>
+        <h3>Manfaat Cosmopolitan Tea</h3>
+        <ul>
+            <li><span itemprop="description">Menyehatkan Tubuh: Teh kaya akan antioksidan yang bermanfaat untuk kesehatan.</span></li>
+            <li><span itemprop="description">Menyegarkan: Kombinasi buah beri memberikan rasa asam-manis yang menyegarkan.</span></li>
+            <li><span itemprop="description">Relaksasi: Aroma teh membantu menenangkan pikiran dan tubuh.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>200 ml teh hitam</li>
+            <li>1 sdm sirup cranberry</li>
+            <li>1 sdm air jeruk nipis</li>
+            <li>Es batu secukupnya</li>
+            <li>Irisan lemon untuk hiasan</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Cosmopolitan Tea</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Seduh teh hitam dan biarkan hingga hangat.</li>
+            <li>Tambahkan sirup cranberry dan air jeruk nipis, aduk rata.</li>
+            <li>Tuang ke dalam gelas berisi es batu.</li>
+            <li>Hiasi dengan irisan lemon di tepi gelas.</li>
+            <li>Sajikan dingin untuk sensasi menyegarkan.</li>
+        </ol>
+        <br />
+        <img src="https://img.freepik.com/free-photo/cold-brew-hibiscus-tea-with-ice-basil-leaves_114579-29762.jpg" alt="Cosmopolitan Tea" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+<!-- Modal Lychee Mojito -->
+<div id="modal-apply6" class="modal" itemscope itemtype="https://schema.org/Recipe">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 itemprop="name">Lychee Mojito</h2>
+        <br>
+        <h3>Manfaat Lychee Mojito</h3>
+        <ul>
+            <li><span itemprop="description">Menyegarkan: Kombinasi lychee dan mint menciptakan rasa segar yang nikmat.</span></li>
+            <li><span itemprop="description">Hidrasi Tubuh: Cocok untuk menjaga cairan tubuh di hari yang panas.</span></li>
+            <li><span itemprop="description">Rasa Unik: Perpaduan rasa manis lychee dan asam lemon menciptakan sensasi berbeda.</span></li>
+        </ul>
+        <br>
+        <h3>Bahan-bahan yang Umum Digunakan</h3>
+        <ul itemprop="ingredients">
+            <li>150 ml air soda</li>
+            <li>3-4 buah lychee kalengan</li>
+            <li>1 sdm air perasan lemon</li>
+            <li>Daun mint segar</li>
+            <li>Es batu secukupnya</li>
+        </ul>
+        <br />
+        <h3>Cara Membuat Lychee Mojito</h3>
+        <ol itemprop="recipeInstructions">
+            <li>Siapkan gelas, masukkan lychee dan daun mint, lalu tumbuk ringan.</li>
+            <li>Tambahkan air perasan lemon dan es batu.</li>
+            <li>Tuang air soda secara perlahan hingga penuh.</li>
+            <li>Aduk ringan dan sajikan segera dalam keadaan dingin.</li>
+        </ol>
+        <br />
+        <img src="https://cdn.mathieuteisseire.com/media/khenzdvt/recipe-045-lychee-nojito.jpg" alt="Lychee Mojito" width="500" itemprop="image">
+        <br />
+    </div>
+</div>
+
+
+
+
+<script>
+        // Modal functionality for Header
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const closeModal = modal.querySelector('.close');
+            modal.style.display = 'block';
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        }
+
+        // Apply Modals
+       document.getElementById('applyBtn').addEventListener('click', () => showModal('modal-apply'));
+
+
+       // Apply Modals
+       document.getElementById('applyBtn1').addEventListener('click', () => showModal('modal-apply1'));
+       document.getElementById('applyBtn2').addEventListener('click', () => showModal('modal-apply2'));
+       document.getElementById('applyBtn3').addEventListener('click', () => showModal('modal-apply3'));
+       document.getElementById('applyBtn4').addEventListener('click', () => showModal('modal-apply4'));
+       document.getElementById('applyBtn5').addEventListener('click', () => showModal('modal-apply5'));
+       document.getElementById('applyBtn6').addEventListener('click', () => showModal('modal-apply6'));
+
+        // Header Modals
+        document.getElementById('aboutBtn').addEventListener('click', () => showModal('modal-about'));
+        document.getElementById('servicesBtn').addEventListener('click', () => showModal('modal-services'));
+        document.getElementById('contactBtn').addEventListener('click', () => showModal('modal-contact'));
+
+        // Footer Modals
+        document.getElementById('aboutFooterBtn').addEventListener('click', () => showModal('modal-footer-about'));
+        document.getElementById('privacyFooterBtn').addEventListener('click', () => showModal('modal-footer-privacy'));
+        document.getElementById('termsFooterBtn').addEventListener('click', () => showModal('modal-footer-terms'));
+    </script>
+
+
+
+</body>
+</html>
